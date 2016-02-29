@@ -19,7 +19,7 @@ public class TrackerClient : MonoBehaviour {
 		{
 			// get human properties:
 			string id = h.id;
-			//string handLeftState = h.body.Properties[BodyPropertiesType.HandLeftState];
+			string handLeftState = h.body.Properties[BodyPropertiesType.HandLeftState];
 
 			// get human joints positions:
 			Vector3 headPosition = h.body.Joints[BodyJointType.head];
