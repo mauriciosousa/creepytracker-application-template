@@ -47,7 +47,7 @@ public enum BodyJointType
 
 public enum BodyPropertiesType
 {
-	UID,
+	id,
 	HandLeftState,
 	HandLeftConfidence,
 	HandRightState,

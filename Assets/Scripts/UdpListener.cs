@@ -58,7 +58,11 @@ public class UdpListener : MonoBehaviour {
 
 			if (stringToParse.Length != 1)
 			{
-				foreach (string b in stringToParse.Split(MessageSeparators.L1))
+				List<string> bstrings = new List<string>(stringToParse.Split(MessageSeparators.L1)); 
+
+				bstrings.RemoveAt(0); // first statement is not a body
+
+				foreach (string b in bstrings)
 				{
 					if (b != NoneMessage) bodies.Add(new Body(b));
 				}

@@ -35,7 +35,7 @@ public class TrackerClient : MonoBehaviour {
 		{
 			try
 			{
-			string bodyID = b.Properties[BodyPropertiesType.UID];
+			string bodyID = b.Properties[BodyPropertiesType.id];
 			if (!_humans.Keys.Contains(bodyID))
 			{
 				_humans.Add(bodyID, new Human());
